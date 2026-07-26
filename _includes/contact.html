@@ -1,0 +1,52 @@
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">Contact</span>
+      <h2>保持联系</h2>
+      <p>如果您对我的经历感兴趣，欢迎随时联系</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info-list fade-in">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <div class="contact-label">邮箱</div>
+            <div class="contact-value">{{ site.author.email }}</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <div class="contact-label">电话</div>
+            <div class="contact-value">{{ site.author.phone }}</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-pin"></i>
+          <div>
+            <div class="contact-label">所在地</div>
+            <div class="contact-value">{{ site.author.location }}</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-briefcase"></i>
+          <div>
+            <div class="contact-label">当前职位</div>
+            <div class="contact-value">{{ site.author.title }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-actions fade-in">
+        <a href="mailto:{{ site.author.email }}" class="btn btn-download">
+          <i class="fas fa-paper-plane"></i> 发送邮件
+        </a>
+        <a href="tel:{{ site.author.phone | replace: ' ', '' }}" class="btn btn-outline-light">
+          <i class="fas fa-phone-alt"></i> 拨打电话
+        </a>
+        <p style="font-size: 13px; color: #94a3b8; text-align: center; margin-top: 8px;">
+          <i class="fas fa-shield-alt"></i> 您的信息将严格保密
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
