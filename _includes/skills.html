@@ -1,0 +1,27 @@
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">Skills</span>
+      <h2>核心能力</h2>
+      <p>销售管理、行业深耕与专业能力矩阵</p>
+    </div>
+    <div class="skills-grid">
+      {% for category in site.skills %}
+      <div class="skill-category fade-in">
+        <h3><i class="fas fa-chart-line"></i> {{ category.category }}</h3>
+        {% for skill in category.items %}
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>{{ skill.name }}</span>
+            <span>{{ skill.level }}%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: {{ skill.level }}%"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
