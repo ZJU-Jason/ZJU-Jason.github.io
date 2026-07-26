@@ -1,0 +1,28 @@
+<section class="section section-alt" id="achievements">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">Key Achievements</span>
+      <h2>关键成就</h2>
+      <p>从0到1的市场突破与亿级项目落地</p>
+    </div>
+    <div class="projects-grid">
+      {% for achievement in site.achievements %}
+      <div class="project-card fade-in">
+        <div class="project-image" style="background: linear-gradient(135deg, {% cycle '#eff6ff','#fef3c7','#ede9fe','#ecfdf5' %}, #ffffff);">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <div class="project-body">
+          <div class="project-metric">{{ achievement.metric }}</div>
+          <h3>{{ achievement.title }}</h3>
+          <p>{{ achievement.description }}</p>
+          <div class="project-tags">
+            {% for tag in achievement.tags %}
+            <span class="project-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
