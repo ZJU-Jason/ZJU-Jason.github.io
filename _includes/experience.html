@@ -6,10 +6,6 @@
   <div class="exp-list">
     {% for item in site.experience %}
     <div class="exp-item fade-in">
-      <div class="exp-time">
-        <div class="exp-period">{{ item.period }}</div>
-        <div class="exp-loc">{{ item.location }}</div>
-      </div>
       <span class="exp-dot"></span>
       <div class="exp-body">
         <div class="exp-top">
@@ -23,7 +19,10 @@
           </a>
           {% endif %}
         </div>
-        <div class="exp-position">{{ item.position }}</div>
+        <div class="exp-meta">
+          <span class="exp-period-badge"><i class="far fa-calendar-alt"></i> {{ item.period }}</span>
+          <span class="exp-position">{{ item.position }} · {{ item.location }}</span>
+        </div>
         <ul class="exp-highlights">
           {% for highlight in item.highlights %}
           <li>{{ highlight }}</li>
