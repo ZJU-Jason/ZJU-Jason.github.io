@@ -168,13 +168,7 @@ img { max-width: 100%; display: block; }
 .sb-skill-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--sb-accent), #9cc0ff); transition: width 1s ease; }
 
 /* 教育 */
-.sb-edu { margin-bottom: 16px; display: flex; gap: 11px; align-items: flex-start; }
-.sb-edu-logo {
-  width: 48px; height: 48px; flex: none;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 8px; padding: 5px;
-  border: 1px solid var(--sb-line);
-}
+.sb-edu { margin-bottom: 16px; }
 .sb-edu-body { flex: 1; min-width: 0; }
 .sb-edu-school { font-size: 13.5px; font-weight: 600; color: #fff; line-height: 1.4; }
 .sb-edu-degree { font-size: 12.5px; color: var(--sb-accent); margin-top: 2px; }
@@ -210,21 +204,18 @@ img { max-width: 100%; display: block; }
 .cv-stat-label { font-size: 12.5px; color: var(--text-2); margin-top: 6px; }
 
 /* =============================================
-   工作经历（左日期 / 右内容）
+   工作经历（时间线 + 期段内嵌）
    ============================================= */
 .exp-list { display: flex; flex-direction: column; gap: 26px; }
-.exp-item { display: grid; grid-template-columns: 132px 1fr; gap: 22px; position: relative; }
+.exp-item { position: relative; padding-left: 36px; }
 .exp-item::before {
-  content: ""; position: absolute; left: 132px; top: 6px; bottom: -26px;
+  content: ""; position: absolute; left: 17px; top: 80px; bottom: -26px;
   width: 2px; background: var(--line);
 }
 .exp-item:last-child::before { display: none; }
-.exp-time { text-align: right; padding-top: 2px; }
-.exp-period { font-size: 13.5px; font-weight: 700; color: var(--accent); }
-.exp-loc { font-size: 12px; color: var(--text-3); margin-top: 3px; }
 .exp-dot {
-  position: absolute; left: 126px; top: 4px; width: 14px; height: 14px;
-  border-radius: 50%; background: #fff; border: 3px solid var(--accent); z-index: 1;
+  position: absolute; left: 8px; top: 80px; width: 20px; height: 20px;
+  border-radius: 50%; background: #fff; border: 4px solid var(--accent); z-index: 1;
 }
 .exp-body {
   background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
@@ -233,13 +224,20 @@ img { max-width: 100%; display: block; }
 .exp-body:hover { box-shadow: var(--shadow-card); transform: translateY(-2px); border-color: #d6e2fb; }
 .exp-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .exp-logo {
-  width: 132px; height: 40px; flex: none; object-fit: contain;
+  width: 160px; height: 48px; flex: none; object-fit: contain;
   background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px;
 }
 .exp-company { font-size: 17px; font-weight: 700; color: var(--text); flex: 1; min-width: 0; }
 .exp-link { color: var(--text-3); font-size: 13px; }
 .exp-link:hover { color: var(--accent); }
-.exp-position { font-size: 13.5px; font-weight: 600; color: var(--accent); margin: 3px 0 12px; }
+.exp-meta { display: flex; align-items: baseline; gap: 14px; margin: 10px 0 14px; flex-wrap: wrap; }
+.exp-period-badge {
+  font-size: 12px; font-weight: 700; color: var(--accent); background: var(--accent-soft);
+  padding: 3px 12px; border-radius: 999px; white-space: nowrap; letter-spacing: 0.3px;
+  display: inline-flex; align-items: center; gap: 5px;
+}
+.exp-period-badge i { font-size: 11px; }
+.exp-position { font-size: 14px; font-weight: 600; color: var(--text-2); }
 .exp-highlights li {
   position: relative; padding-left: 18px; font-size: 14px; line-height: 1.7;
   color: var(--text-2); margin-bottom: 7px;
@@ -255,7 +253,7 @@ img { max-width: 100%; display: block; }
    ============================================= */
 .ach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .ach-card {
-  position: relative; padding: 20px 130px 18px 20px; border-radius: var(--radius);
+  position: relative; padding: 20px 155px 18px 20px; border-radius: var(--radius);
   background: var(--paper); border: 1px solid var(--line);
   transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
   overflow: hidden;
@@ -266,7 +264,7 @@ img { max-width: 100%; display: block; }
 }
 .ach-logo {
   position: absolute; top: 16px; right: 16px;
-  width: 100px; height: 34px; object-fit: contain;
+  width: 120px; height: 38px; object-fit: contain;
   background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px;
   opacity: 0.85;
 }
@@ -320,9 +318,9 @@ img { max-width: 100%; display: block; }
     border-bottom: 1px solid var(--line); box-shadow: var(--shadow-card); }
   .nav-links.open a { display: block; }
   .cv-main { padding: 32px 20px 40px; }
-  .exp-item { grid-template-columns: 1fr; gap: 10px; }
-  .exp-item::before, .exp-dot { display: none; }
-  .exp-time { text-align: left; display: flex; gap: 10px; align-items: center; }
+  .exp-item { padding-left: 24px; }
+  .exp-dot { left: 2px; width: 16px; height: 16px; border-width: 3px; }
+  .exp-item::before { left: 10px; }
   .ach-grid { grid-template-columns: 1fr; }
   .cv-stats { flex-direction: column; gap: 10px; }
   .cv-sec-head h2 { font-size: 19px; }
