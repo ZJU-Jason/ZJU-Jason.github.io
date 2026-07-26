@@ -1,0 +1,65 @@
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          销售总监 · 新能源与汽车电子
+        </div>
+        <h1>
+          {{ site.author.name }}<br>
+          <span class="highlight">{{ site.author.name_en }}</span>
+        </h1>
+        <p class="hero-subtitle">{{ site.author.title }}</p>
+        <p class="hero-tagline">{{ site.author.tagline }}</p>
+        <div class="hero-actions">
+          <a href="#achievements" class="btn btn-primary">
+            <i class="fas fa-trophy"></i> 关键成就
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> 联系我
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="mailto:{{ site.author.email }}" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:{{ site.author.phone | replace: ' ', '' }}" title="Phone">
+            <i class="fas fa-phone-alt"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <div class="hero-avatar-bg"></div>
+          <div class="hero-avatar">
+            <div class="hero-avatar-placeholder">
+              {{ site.author.name | slice: 0, 1 }}
+            </div>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat-card">
+            <div class="num">10+</div>
+            <div class="label">年行业经验</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="num">10x</div>
+            <div class="label">营收增长</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="num">1亿+</div>
+            <div class="label">生命周期项目</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <span>向下滚动</span>
+    </div>
+  </div>
+</section>
