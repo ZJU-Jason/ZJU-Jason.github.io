@@ -1,5 +1,5 @@
 <div class="sb-profile">
-  <div class="sb-avatar">{{ site.author.name | slice: 0, 1 }}</div>
+  <img class="sb-avatar" src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="{{ site.author.name }}">
   <div class="sb-name">{{ site.author.name }}</div>
   <div class="sb-name-en">{{ site.author.name_en }}</div>
   <div class="sb-title">{{ site.author.title }}</div>
@@ -45,6 +45,9 @@
   <h2 class="sb-h"><i class="fas fa-graduation-cap"></i> 教育背景</h2>
   {% for item in site.education %}
     <div class="sb-edu">
+      {% if item.logo %}
+      <img class="sb-edu-logo" src="{{ '/assets/images/' | append: item.logo | relative_url }}" alt="{{ item.school }}">
+      {% endif %}
       <div class="sb-edu-school">{{ item.school }}</div>
       <div class="sb-edu-degree">{{ item.degree }}</div>
       <div class="sb-edu-period">{{ item.period }} · {{ item.location }}</div>
