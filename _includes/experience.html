@@ -13,6 +13,9 @@
       <span class="exp-dot"></span>
       <div class="exp-body">
         <div class="exp-top">
+          {% if item.logo %}
+          <img class="exp-logo" src="{{ '/assets/images/' | append: item.logo | relative_url }}" alt="{{ item.company }}">
+          {% endif %}
           <h3 class="exp-company">{{ item.company }}</h3>
           {% if item.url %}
           <a class="exp-link" href="{{ item.url }}" target="_blank" rel="noopener" title="官网">
