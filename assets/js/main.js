@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  /* ---- 技能栏动画 - 滚动到视口时触发 ---- */
-  const skillBars = document.querySelectorAll('.skill-bar-fill');
+  /* ---- 技能栏动画 - 滚动到视口时触发（侧栏 + 主区） ---- */
+  const skillBars = document.querySelectorAll('.skill-bar-fill, .sb-skill-fill');
 
   if ('IntersectionObserver' in window) {
     const skillObserver = new IntersectionObserver(function(entries) {
@@ -89,6 +89,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     skillBars.forEach(function(bar) {
       skillObserver.observe(bar);
+    });
+  }
+
+  /* ---- 保存 PDF / 打印 ---- */
+  const printBtn = document.getElementById('nav-print');
+  if (printBtn) {
+    printBtn.addEventListener('click', function() {
+      window.print();
     });
   }
 
