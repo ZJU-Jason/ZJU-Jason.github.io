@@ -233,7 +233,7 @@ img { max-width: 100%; display: block; }
 .exp-body:hover { box-shadow: var(--shadow-card); transform: translateY(-2px); border-color: #d6e2fb; }
 .exp-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .exp-logo {
-  width: 60px; height: 40px; flex: none; object-fit: contain;
+  width: 132px; height: 40px; flex: none; object-fit: contain;
   background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px;
 }
 .exp-company { font-size: 17px; font-weight: 700; color: var(--text); flex: 1; min-width: 0; }
@@ -255,7 +255,7 @@ img { max-width: 100%; display: block; }
    ============================================= */
 .ach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .ach-card {
-  position: relative; padding: 20px 90px 18px 20px; border-radius: var(--radius);
+  position: relative; padding: 20px 130px 18px 20px; border-radius: var(--radius);
   background: var(--paper); border: 1px solid var(--line);
   transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
   overflow: hidden;
@@ -266,7 +266,7 @@ img { max-width: 100%; display: block; }
 }
 .ach-logo {
   position: absolute; top: 16px; right: 16px;
-  width: 60px; height: 40px; object-fit: contain;
+  width: 100px; height: 34px; object-fit: contain;
   background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px;
   opacity: 0.85;
 }
