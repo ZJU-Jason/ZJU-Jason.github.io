@@ -71,6 +71,7 @@ skills:
 experience:
   - company: 维发电子科技（常州）有限公司
     url: ""
+    logo: "xiaomi.svg"
     position: 销售总监，新能源与汽车电子
     period: "2023.04 - 2026.06"
     location: 常州
@@ -82,6 +83,7 @@ experience:
       - 敏锐识别 AI 数据中心（AI DC）的固态继电器创新业务机会，成功获取康明斯（Cummins）业务定点，产品毛利率约 60%
   - company: 德国大陆集团（Continental）自动驾驶事业部
     url: "https://www.continental.com"
+    logo: "continental.svg"
     position: 销售副总监兼产品线经理，汽车电子
     period: "2022.01 - 2023.04"
     location: 上海
@@ -93,6 +95,7 @@ experience:
       - 毫米波角雷达SRR获得奇瑞新能源、合众汽车、中华汽车RFQ及产品准入认可
   - company: 上海保隆汽车科技股份有限公司
     url: "https://www.baolong.biz"
+    logo: "baolong.svg"
     position: 销售经理，汽车电子
     period: "2018.01 - 2021.12"
     location: 上海
@@ -103,6 +106,7 @@ experience:
       - 上汽、东风日产、比亚迪、小鹏、江淮雨量传感器从0到1开拓，生命周期金额超1亿
   - company: 上海锦湖日丽塑料有限公司
     url: ""
+    logo: "kumho-sunny.svg"
     position: 客户经理，汽车行业
     period: "2016.08 - 2018.01"
     location: 上海
@@ -116,42 +120,51 @@ achievements:
     description: 主导维发电子高压继电器在储能领域的市场开拓，4年将营收从1000万+提升至2亿左右（20倍增长），从零做到行业第二，导入中车株洲所、盛弘股份、国轩高科等头部客户
     tags: [新能源储能, 高压继电器, 市场开拓]
     metric: "营收20倍增长"
+    logo: "xiaomi.svg"
   - title: AI DC 固态继电器创新业务
     description: 敏锐识别 AI 数据中心（AI DC）的固态继电器（SSR）创新业务机会，成功获取康明斯（Cummins）业务定点，产品毛利率约 60%
     tags: [AI数据中心, 固态继电器, 康明斯Cummins]
     metric: "毛利率约60%"
+    logo: "cummins.svg"
 
   - title: 线控底盘传感器从0到1
     description: 实现线控底盘LPS传感器业务从0到1突破，覆盖小米、上汽、东风、吉利等主流新能源车型平台
     tags: [线控底盘, LPS传感器, 新能源汽车]
     metric: "生命周期超1亿"
+    logo: "xiaomi.svg"
   - title: 吉利系前雷达定点
     description: 在大陆集团主导吉利系ARS前雷达业务定点，涵盖吉利、极氪、Smart三大品牌平台
     tags: [ADAS, 毫米波雷达, 前装]
     metric: "生命周期超6亿"
+    logo: "continental.svg"
   - title: 传感器产品线集群
     description: 在保隆科技主导压力/雨量传感器市场份额突破，覆盖上汽、比亚迪、广汽、东风日产等主流车企
     tags: [车载传感器, 压力传感器, 雨量传感器]
     metric: "份额超80%"
+    logo: "baolong.svg"
 
 # 教育背景
 education:
   - school: 浙江大学 & McGill University（加拿大）
+    logo: "zju.svg"
     degree: 研究生 · 国际工商管理（GMBA）
     period: "2019.09 - 2022.03"
     location: 杭州 & 蒙特利尔
+    logo: "zju.svg"
     highlights:
       - 国际工商管理硕士项目，跨文化管理训练
   - school: 香港科技大学（HKUST）
     degree: 研究生 · 科技创新领导力交叉学科项目（ITL）
     period: "2013.07 - 2014.05"
     location: 香港
+    logo: "hkust.svg"
     highlights:
       - 科技创新与领导力交叉学科项目
   - school: 南昌大学
     degree: 本科 · 化学工程与工艺，工学学士
     period: "2009.09 - 2013.06"
     location: 南昌
+    logo: "ncu.svg"
     highlights: []
 
 # 语言与证书
