@@ -1,12 +1,17 @@
 ---
 layout: default
-title: 首页
+title: 周鹏 (Jason) 个人简历
 ---
 
-{% include hero.html %}
-{% include about.html %}
-{% include experience.html %}
-{% include skills.html %}
-{% include achievements.html %}
-{% include education.html %}
-{% include contact.html %}
+{% include header.html %}
+<div class="cv-page">
+  <aside class="cv-sidebar">
+    {% include cv-sidebar.html %}
+  </aside>
+  <div class="cv-main">
+    {% include cv-profile.html %}
+    {% include experience.html %}
+    {% include achievements.html %}
+  </div>
+</div>
+{% include footer.html %}
