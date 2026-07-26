@@ -1,0 +1,31 @@
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">Projects</span>
+      <h2>项目作品</h2>
+      <p>近期的开源项目与个人作品</p>
+    </div>
+    <div class="projects-grid">
+      {% for project in site.projects %}
+      <div class="project-card fade-in">
+        <div class="project-image">
+          <i class="fas fa-code-branch"></i>
+        </div>
+        <div class="project-body">
+          <h3>
+            <a href="{{ project.url }}" target="_blank" rel="noopener">
+              {{ project.title }} <i class="fas fa-external-link-alt" style="font-size: 12px;"></i>
+            </a>
+          </h3>
+          <p>{{ project.description }}</p>
+          <div class="project-tags">
+            {% for tag in project.tags %}
+            <span class="project-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
