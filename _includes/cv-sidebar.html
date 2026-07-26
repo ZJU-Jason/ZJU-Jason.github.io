@@ -45,9 +45,6 @@
   <h2 class="sb-h"><i class="fas fa-graduation-cap"></i> 教育背景</h2>
   {% for item in site.education %}
     <div class="sb-edu">
-      {% if item.logo %}
-      <img class="sb-edu-logo" src="{{ '/assets/images/' | append: item.logo | relative_url }}" alt="{{ item.school }}">
-      {% endif %}
       <div class="sb-edu-body">
         <div class="sb-edu-school">{{ item.school }}</div>
         <div class="sb-edu-degree">{{ item.degree }}</div>
