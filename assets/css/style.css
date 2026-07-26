@@ -129,11 +129,9 @@ img { max-width: 100%; display: block; }
 .sb-avatar {
   width: 116px; height: 116px; margin: 0 auto 18px;
   border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 46px; font-weight: 700; color: #fff;
+  object-fit: cover; display: block;
   background: linear-gradient(135deg, var(--sb-accent), #2f6df6);
-  box-shadow: 0 0 0 6px rgba(110, 160, 255, 0.16), 0 8px 24px rgba(0, 0, 0, 0.3);
-  letter-spacing: 2px;
+  box-shadow: 0 0 0 6px rgba(110, 160, 255, 0.18), 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 .sb-name { font-size: 26px; font-weight: 700; letter-spacing: 1px; color: #fff; }
 .sb-name-en { font-size: 14px; color: var(--sb-text-2); letter-spacing: 2px; margin-top: 2px; text-transform: uppercase; }
@@ -170,7 +168,14 @@ img { max-width: 100%; display: block; }
 .sb-skill-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--sb-accent), #9cc0ff); transition: width 1s ease; }
 
 /* 教育 */
-.sb-edu { margin-bottom: 16px; }
+.sb-edu { margin-bottom: 16px; display: flex; gap: 11px; align-items: flex-start; }
+.sb-edu-logo {
+  width: 38px; height: 38px; flex: none;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px; padding: 4px;
+  border: 1px solid var(--sb-line);
+}
+.sb-edu-body { flex: 1; min-width: 0; }
 .sb-edu-school { font-size: 13.5px; font-weight: 600; color: #fff; line-height: 1.4; }
 .sb-edu-degree { font-size: 12.5px; color: var(--sb-accent); margin-top: 2px; }
 .sb-edu-period { font-size: 12px; color: var(--sb-text-2); margin-top: 2px; }
@@ -226,8 +231,12 @@ img { max-width: 100%; display: block; }
   padding: 20px 22px; transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 .exp-body:hover { box-shadow: var(--shadow-card); transform: translateY(-2px); border-color: #d6e2fb; }
-.exp-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.exp-company { font-size: 17px; font-weight: 700; color: var(--text); }
+.exp-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.exp-logo {
+  width: 44px; height: 30px; flex: none; object-fit: contain;
+  background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 3px 5px;
+}
+.exp-company { font-size: 17px; font-weight: 700; color: var(--text); flex: 1; min-width: 0; }
 .exp-link { color: var(--text-3); font-size: 13px; }
 .exp-link:hover { color: var(--accent); }
 .exp-position { font-size: 13.5px; font-weight: 600; color: var(--accent); margin: 3px 0 12px; }
@@ -246,7 +255,7 @@ img { max-width: 100%; display: block; }
    ============================================= */
 .ach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .ach-card {
-  position: relative; padding: 20px 20px 18px; border-radius: var(--radius);
+  position: relative; padding: 20px 70px 18px 20px; border-radius: var(--radius);
   background: var(--paper); border: 1px solid var(--line);
   transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
   overflow: hidden;
@@ -254,6 +263,12 @@ img { max-width: 100%; display: block; }
 .ach-card::before {
   content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
   background: linear-gradient(var(--accent), #8fb6ff);
+}
+.ach-logo {
+  position: absolute; top: 16px; right: 16px;
+  width: 44px; height: 30px; object-fit: contain;
+  background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 3px 5px;
+  opacity: 0.85;
 }
 .ach-card:hover { box-shadow: var(--shadow-card); transform: translateY(-3px); border-color: #d6e2fb; }
 .ach-metric {
