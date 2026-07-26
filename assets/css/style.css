@@ -170,9 +170,9 @@ img { max-width: 100%; display: block; }
 /* 教育 */
 .sb-edu { margin-bottom: 16px; display: flex; gap: 11px; align-items: flex-start; }
 .sb-edu-logo {
-  width: 38px; height: 38px; flex: none;
+  width: 48px; height: 48px; flex: none;
   background: rgba(255, 255, 255, 0.06);
-  border-radius: 8px; padding: 4px;
+  border-radius: 8px; padding: 5px;
   border: 1px solid var(--sb-line);
 }
 .sb-edu-body { flex: 1; min-width: 0; }
@@ -233,8 +233,8 @@ img { max-width: 100%; display: block; }
 .exp-body:hover { box-shadow: var(--shadow-card); transform: translateY(-2px); border-color: #d6e2fb; }
 .exp-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .exp-logo {
-  width: 44px; height: 30px; flex: none; object-fit: contain;
-  background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 3px 5px;
+  width: 60px; height: 40px; flex: none; object-fit: contain;
+  background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px;
 }
 .exp-company { font-size: 17px; font-weight: 700; color: var(--text); flex: 1; min-width: 0; }
 .exp-link { color: var(--text-3); font-size: 13px; }
@@ -255,7 +255,7 @@ img { max-width: 100%; display: block; }
    ============================================= */
 .ach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .ach-card {
-  position: relative; padding: 20px 70px 18px 20px; border-radius: var(--radius);
+  position: relative; padding: 20px 90px 18px 20px; border-radius: var(--radius);
   background: var(--paper); border: 1px solid var(--line);
   transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
   overflow: hidden;
@@ -266,8 +266,8 @@ img { max-width: 100%; display: block; }
 }
 .ach-logo {
   position: absolute; top: 16px; right: 16px;
-  width: 44px; height: 30px; object-fit: contain;
-  background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 3px 5px;
+  width: 60px; height: 40px; object-fit: contain;
+  background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px;
   opacity: 0.85;
 }
 .ach-card:hover { box-shadow: var(--shadow-card); transform: translateY(-3px); border-color: #d6e2fb; }
