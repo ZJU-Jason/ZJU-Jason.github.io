@@ -6,6 +6,9 @@
   <div class="ach-grid">
     {% for achievement in site.achievements %}
     <div class="ach-card fade-in">
+      {% if achievement.logo %}
+      <img class="ach-logo" src="{{ '/assets/images/' | append: achievement.logo | relative_url }}" alt="">
+      {% endif %}
       <div class="ach-metric">{{ achievement.metric }}</div>
       <h3>{{ achievement.title }}</h3>
       <p>{{ achievement.description }}</p>
