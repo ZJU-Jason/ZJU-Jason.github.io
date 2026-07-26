@@ -1,0 +1,25 @@
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">Education</span>
+      <h2>教育背景</h2>
+      <p>跨学科、跨文化的学术训练</p>
+    </div>
+    <div class="edu-grid">
+      {% for item in site.education %}
+      <div class="edu-card fade-in">
+        <div class="school">{{ item.school }}</div>
+        <div class="degree">{{ item.degree }}</div>
+        <div class="period">{{ item.period }} · {{ item.location }}</div>
+        {% if item.highlights.size > 0 %}
+        <ul>
+          {% for highlight in item.highlights %}
+          <li>{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
