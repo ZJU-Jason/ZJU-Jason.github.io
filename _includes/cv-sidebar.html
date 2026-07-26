@@ -1,0 +1,71 @@
+<div class="sb-profile">
+  <div class="sb-avatar">{{ site.author.name | slice: 0, 1 }}</div>
+  <div class="sb-name">{{ site.author.name }}</div>
+  <div class="sb-name-en">{{ site.author.name_en }}</div>
+  <div class="sb-title">{{ site.author.title }}</div>
+</div>
+
+<div class="sb-section">
+  <h2 class="sb-h"><i class="fas fa-address-card"></i> 联系方式</h2>
+  <ul class="sb-contact">
+    <li>
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    </li>
+    <li>
+      <i class="fas fa-phone-alt"></i>
+      <a href="tel:{{ site.author.phone | replace: ' ', '' }}">{{ site.author.phone }}</a>
+    </li>
+    <li>
+      <i class="fas fa-map-marker-alt"></i>
+      <span>{{ site.author.location }}</span>
+    </li>
+  </ul>
+</div>
+
+<div class="sb-section" id="skills">
+  <h2 class="sb-h"><i class="fas fa-chart-line"></i> 核心能力</h2>
+  {% for category in site.skills %}
+    <div class="sb-skill-cat">{{ category.category }}</div>
+    {% for skill in category.items %}
+      <div class="sb-skill">
+        <div class="sb-skill-top">
+          <span>{{ skill.name }}</span>
+          <span>{{ skill.level }}</span>
+        </div>
+        <div class="sb-skill-bar">
+          <div class="sb-skill-fill" style="width: {{ skill.level }}%"></div>
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
+</div>
+
+<div class="sb-section" id="education">
+  <h2 class="sb-h"><i class="fas fa-graduation-cap"></i> 教育背景</h2>
+  {% for item in site.education %}
+    <div class="sb-edu">
+      <div class="sb-edu-school">{{ item.school }}</div>
+      <div class="sb-edu-degree">{{ item.degree }}</div>
+      <div class="sb-edu-period">{{ item.period }} · {{ item.location }}</div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="sb-section">
+  <h2 class="sb-h"><i class="fas fa-language"></i> 语言能力</h2>
+  <ul class="sb-list">
+    {% for lang in site.languages %}
+      <li><span>{{ lang.name }}</span><span class="sb-muted">{{ lang.level }}</span></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="sb-section">
+  <h2 class="sb-h"><i class="fas fa-certificate"></i> 证书</h2>
+  <ul class="sb-list">
+    {% for cert in site.certifications %}
+      <li><span>{{ cert.name }}</span><span class="sb-muted">{{ cert.issuer }}</span></li>
+    {% endfor %}
+  </ul>
+</div>
