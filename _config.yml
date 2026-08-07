@@ -175,6 +175,5 @@ languages:
     level: 国际商务交流无障碍 | IELTS 6.5
 
 certifications:
-  - name: Six Sigma 绿带认证
-    issuer: 中国质量协会
+  - name: Abacus Quality 认证
   - name: C1 驾照
