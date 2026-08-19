@@ -1,10 +1,11 @@
+{% assign d = site.data[page.lang] | default: site.data.zh %}
 <section class="cv-section" id="achievements">
   <div class="cv-sec-head">
     <span class="cv-sec-bar"></span>
-    <h2>关键成就 <span class="cv-sec-en">Key Achievements</span></h2>
+    <h2>{{ d.t.achTitle }} <span class="cv-sec-en">{{ d.t.achEn }}</span></h2>
   </div>
   <div class="ach-grid">
-    {% for achievement in site.achievements %}
+    {% for achievement in d.achievements %}
     <div class="ach-card fade-in">
       {% if achievement.logo %}
       <img class="ach-logo" src="{{ '/assets/images/' | append: achievement.logo | relative_url }}" alt="">
