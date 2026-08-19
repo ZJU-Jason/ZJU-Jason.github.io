@@ -1,14 +1,16 @@
+{% assign d = site.data[page.lang] | default: site.data.zh %}
 <header class="site-header" id="site-header">
   <div class="nav-inner">
-    <a href="#" class="nav-logo">{{ site.author.name }} <span>{{ site.author.name_en }}</span></a>
+    <a href="#" class="nav-logo">{{ d.author.name }} <span>{{ d.author.name_en }}</span></a>
     <nav class="nav-links" id="nav-links">
-      <a href="#profile">简介</a>
-      <a href="#experience">经历</a>
-      <a href="#achievements">成就</a>
-      <a href="#skills">能力</a>
-      <a href="#education">教育</a>
-      <button class="nav-print" id="nav-print" type="button"><i class="fas fa-print"></i> 保存 PDF</button>
+      <a href="#profile">{{ d.t.nav.profile }}</a>
+      <a href="#experience">{{ d.t.nav.experience }}</a>
+      <a href="#achievements">{{ d.t.nav.achievements }}</a>
+      <a href="#skills">{{ d.t.nav.skills }}</a>
+      <a href="#education">{{ d.t.nav.education }}</a>
+      <a href="{{ d.t.langUrl }}" class="lang-switch">{{ d.t.langSwitch }}</a>
+      <button class="nav-print" id="nav-print" type="button"><i class="fas fa-print"></i> {{ d.t.nav.savePdf }}</button>
     </nav>
-    <button class="mobile-toggle" id="mobile-toggle" aria-label="菜单"><i class="fas fa-bars"></i></button>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="menu"><i class="fas fa-bars"></i></button>
   </div>
 </header>
