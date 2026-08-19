@@ -1,10 +1,11 @@
+{% assign d = site.data[page.lang] | default: site.data.zh %}
 <section class="cv-section" id="experience">
   <div class="cv-sec-head">
     <span class="cv-sec-bar"></span>
-    <h2>工作经历 <span class="cv-sec-en">Experience</span></h2>
+    <h2>{{ d.t.expTitle }} <span class="cv-sec-en">{{ d.t.expEn }}</span></h2>
   </div>
   <div class="exp-list">
-    {% for item in site.experience %}
+    {% for item in d.experience %}
     <div class="exp-item fade-in">
       <span class="exp-dot"></span>
       <div class="exp-body">
@@ -14,7 +15,7 @@
           {% endif %}
           <h3 class="exp-company">{{ item.company }}</h3>
           {% if item.url %}
-          <a class="exp-link" href="{{ item.url }}" target="_blank" rel="noopener" title="官网">
+          <a class="exp-link" href="{{ item.url }}" target="_blank" rel="noopener" title="{{ d.t.website }}">
             <i class="fas fa-external-link-alt"></i>
           </a>
           {% endif %}
