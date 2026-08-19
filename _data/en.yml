@@ -1,0 +1,187 @@
+# ============================================
+# English data (site.data.en)
+# View templates read via site.data[page.lang]
+# ============================================
+author:
+  name: Jason Zhou
+  name_en: ZHOU Peng
+  title: Sales Director · New Energy & Automotive Electronics
+  location: Songjiang District, Shanghai, China
+  email: jason_chows@outlook.com
+  phone: "+86 136-6199-0482"
+  tagline: "10+ years in automotive electronics; grew revenue 20x from RMB 10M+ to ~RMB 200M in 4 years"
+  summary: >
+    With 10+ years of sales management experience in automotive electronics and new energy, Jason has held
+    leadership roles at Continental AG (Germany), Baolong Automotive and Xiaomi-backed Vicvac Electronics.
+    Since joining Vicvac in 2023, he has grown company revenue 20x from RMB 10M+ to approximately RMB 200M
+    in four years, reaching #2 in the high-voltage relay segment. He excels at market development from 0 to 1,
+    strategic account management and team building, having led a 13-person sales team and managed multiple
+    large-account programs with life-cycle values exceeding RMB 100M.
+  intro: >
+    From Continental and Baolong to Xiaomi-backed Vicvac, I have focused on turning technology value into
+    measurable commercial outcomes — creating blue oceans in red-ocean markets and building moats amid
+    scale competition.
+
+# Skills
+skills:
+  - category: Sales Management
+    items:
+      - name: Sales Team Building & Management
+        level: 95
+      - name: Key Account Development & Management
+        level: 95
+      - name: Market Expansion & Strategic Planning
+        level: 90
+      - name: Channel Management
+        level: 85
+  - category: Industry Domains
+    items:
+      - name: New Energy Storage (Utility / C&I / Residential)
+        level: 95
+      - name: Vehicle Electrification (xEV Systems)
+        level: 90
+      - name: Chassis-by-wire Sensors
+        level: 85
+      - name: ADAS & Autonomous Driving
+        level: 80
+  - category: Core Competencies
+    items:
+      - name: Commercial Negotiation & Contract Management
+        level: 95
+      - name: Product Line Management & Roadmap Planning
+        level: 90
+      - name: Cross-cultural Communication (EN / CN)
+        level: 85
+      - name: Six Sigma Green Belt
+        level: 80
+
+# Work Experience
+experience:
+  - company: Vicvac Electronics Technology (Changzhou) Co., Ltd.
+    url: ""
+    logo: "vicvac.svg"
+    position: Sales Director, New Energy & Automotive Electronics
+    period: "2023.04 - 2026.06"
+    location: Changzhou
+    highlights:
+      - Built industrial & vehicle electrification sales teams (managing 13 direct reports), driving market development across utility-scale ESS, xEV 3-in-1 systems and chassis-by-wire
+      - Grew company revenue 20x from RMB 10M+ to ~RMB 200M in 4 years, achieving #2 in the high-voltage relay segment
+      - Led market expansion in utility-scale, C&I and residential energy storage; onboarded leading customers including CRRC Zhuzhou, Sinexcel, Gotion High-Tech, Xieneng, Huasu, REPT, Goldwind and Mango Power
+      - Achieved 0-to-1 breakthrough in chassis-by-wire (LPS) sensors, winning programs for Xiaomi SU7 Executive, Xiaomi MM21, SAIC IM LS6, Dongfeng Voyah, Dongfeng Mengshi M183 and Geely KX21, with life-cycle value exceeding RMB 100M
+      - Identified the AI data center (AI DC) solid-state relay opportunity and secured the Cummins business nomination with ~60% gross margin
+  - company: Continental AG (Germany) - Autonomous Mobility
+    url: "https://www.continental.com"
+    logo: "continental.svg"
+    position: Associate Sales Director & Product Line Manager, Automotive Electronics
+    period: "2022.01 - 2023.04"
+    location: Shanghai
+    highlights:
+      - Managed ADAS front-load (pre-install) business across Geely Group (Geely, Zeekr, Smart, Volvo), Chery Group, GAC Group and Tesla, totaling ~RMB 2B
+      - Served as product line manager for mmWave corner radar (SRR), co-defining the China-focused SRR roadmap with Hannover HQ
+      - Led the team to win Geely Group (Geely, Zeekr, Smart) ARS front radar nominations with life-cycle value exceeding RMB 600M
+      - Advanced ADCU domain controller front-load verification with Chery NEV and Smart brand
+      - Gained RFQ and product qualification for mmWave SRR with Chery NEV, Neta Auto and Zhonghua Auto
+  - company: Shanghai Baolong Automotive Corporation
+    url: "https://www.baolong.biz"
+    logo: "baolong.svg"
+    position: Sales Manager, Automotive Electronics
+    period: "2018.01 - 2021.12"
+    location: Shanghai
+    highlights:
+      - Led front-load sensor market development with SAIC, GAC, Dongfeng Nissan, BYD, Geely, NIO and XPeng
+      - Managed pressure, rain, position, speed, angle and acceleration sensor product lines
+      - Captured 80%+ share of pressure sensors at SAIC, GAC and BYD, with life-cycle value exceeding RMB 200M
+      - Drove 0-to-1 development of rain sensors at SAIC, Dongfeng Nissan, BYD, XPeng and JAC, exceeding RMB 100M in life-cycle value
+  - company: Shanghai Kumho Sunny Plastics Co., Ltd.
+    url: ""
+    logo: "kumho-sunny.svg"
+    position: Account Manager, Automotive
+    period: "2016.08 - 2018.01"
+    location: Shanghai
+    highlights:
+      - Managed automotive interior/exterior parts business development (ABS, PC/ABS, ASA, PC materials)
+      - Co-built multiple OEM hit models and premium vehicle interior/exterior parts with Tier-1 suppliers (SAIC Marvel X, RX5; Geely Emgrand, Jiaji)
+
+# Key Achievements
+achievements:
+  - title: High-Voltage Relay Market Breakthrough
+    description: Led Vicvac's high-voltage relay expansion in energy storage, growing revenue 20x from RMB 10M+ to ~RMB 200M in 4 years, from zero to #2 in the segment, onboarding CRRC Zhuzhou, Sinexcel, Gotion and other leading customers
+    tags: [New Energy Storage, High-Voltage Relay, Market Development]
+    metric: "20x Revenue Growth"
+    logo: "vicvac.svg"
+  - title: AI DC Solid-State Relay Innovation
+    description: Identified the AI data center (AI DC) solid-state relay (SSR) opportunity and secured the Cummins business nomination, with ~60% gross margin
+    tags: [AI Data Center, Solid-State Relay, Cummins]
+    metric: "~60% Gross Margin"
+    logo: "cummins.svg"
+  - title: Chassis-by-wire Sensors from 0 to 1
+    description: Achieved 0-to-1 breakthrough for chassis-by-wire LPS sensors, covering mainstream NEV platforms from Xiaomi, SAIC, Dongfeng and Geely
+    tags: [Chassis-by-wire, LPS Sensors, New Energy Vehicle]
+    metric: "Life-cycle > RMB 100M"
+    logo: "vicvac.svg"
+  - title: Geely Group Front Radar Nomination
+    description: Led the ARS front radar business nomination at Continental, covering Geely, Zeekr and Smart platforms
+    tags: [ADAS, mmWave Radar, Front-load]
+    metric: "Life-cycle > RMB 600M"
+    logo: "continental.svg"
+  - title: Sensor Product Line Cluster
+    description: Led pressure/rain sensor share breakthroughs at Baolong, covering SAIC, BYD, GAC, Dongfeng Nissan and other mainstream OEMs
+    tags: [Vehicle Sensors, Pressure Sensor, Rain Sensor]
+    metric: "80%+ Market Share"
+    logo: "baolong.svg"
+
+# Education
+education:
+  - school: Zhejiang University & McGill University (Canada)
+    degree: Global MBA Program (GMBA)
+    period: "2019.09 - 2022.03"
+    location: Hangzhou & Montreal
+  - school: Hong Kong University of Science and Technology (HKUST)
+    degree: Graduate Program in Technology & Innovation Leadership (ITL)
+    period: "2013.07 - 2014.05"
+    location: Hong Kong
+  - school: Nanchang University
+    degree: B.Eng., Chemical Engineering & Technology
+    period: "2009.09 - 2013.06"
+    location: Nanchang
+
+# Languages & Certifications
+languages:
+  - name: Chinese
+    level: Native
+  - name: English
+    level: Fluent for international business | IELTS 6.5
+
+certifications:
+  - name: Abacus Quality Certification
+  - name: C1 Driver's License
+
+# UI copy (t = text)
+t:
+  langSwitch: 中文
+  langUrl: "/"
+  nav:
+    profile: About
+    experience: Experience
+    achievements: Achievements
+    skills: Skills
+    education: Education
+    savePdf: Save PDF
+  profileTitle: Profile
+  profileEn: 个人简介
+  statExp: Years of Experience
+  statExpUnit: yrs
+  statRev: Revenue Growth
+  statRevUnit: x
+  statTeam: Team Managed
+  statTeamUnit: people
+  expTitle: Work Experience
+  expEn: 工作经历
+  achTitle: Key Achievements
+  achEn: 关键成就
+  contact: Contact
+  coreSkills: Core Competencies
+  education: Education
+  languages: Languages
+  certificates: Certifications
+  website: Website
