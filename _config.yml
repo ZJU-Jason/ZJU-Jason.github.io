@@ -1,8 +1,8 @@
 # 个人简历网站配置
-title: 周鹏 (Jason) | 销售总监 - 新能源与汽车电子
+title: 周鹏 (Jason) | 销售总监 - 汽车电子与新能源
 email: jason_chows@outlook.com
 description: >-
-  周鹏 (Jason) 的个人简历网站 - 销售总监，专注新能源与汽车电子领域
+  周鹏 (Jason) 的个人简历网站 - 销售总监，专注汽车电子与新能源领域
 baseurl: ""  # 如果使用 GitHub Pages 项目页面，设置为 "/仓库名"
 url: ""      # 自定义域名留空，GitHub Pages 会自动生成
 
@@ -23,7 +23,7 @@ exclude:
 author:
   name: 周鹏
   name_en: Jason Zhou
-  title: 销售总监 · 新能源与汽车电子
+  title: 销售总监 · 汽车电子与新能源
   location: 上海市松江区
   email: jason_chows@outlook.com
   phone: "+86 136-6199-0482"
