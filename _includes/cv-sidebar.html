@@ -1,31 +1,32 @@
+{% assign d = site.data[page.lang] | default: site.data.zh %}
 <div class="sb-profile">
-  <img class="sb-avatar" src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="{{ site.author.name }}">
-  <div class="sb-name">{{ site.author.name }}</div>
-  <div class="sb-name-en">{{ site.author.name_en }}</div>
-  <div class="sb-title">{{ site.author.title }}</div>
+  <img class="sb-avatar" src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="{{ d.author.name }}">
+  <div class="sb-name">{{ d.author.name }}</div>
+  <div class="sb-name-en">{{ d.author.name_en }}</div>
+  <div class="sb-title">{{ d.author.title }}</div>
 </div>
 
 <div class="sb-section">
-  <h2 class="sb-h"><i class="fas fa-address-card"></i> 联系方式</h2>
+  <h2 class="sb-h"><i class="fas fa-address-card"></i> {{ d.t.contact }}</h2>
   <ul class="sb-contact">
     <li>
       <i class="fas fa-envelope"></i>
-      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      <a href="mailto:{{ d.author.email }}">{{ d.author.email }}</a>
     </li>
     <li>
       <i class="fas fa-phone-alt"></i>
-      <a href="tel:{{ site.author.phone | replace: ' ', '' }}">{{ site.author.phone }}</a>
+      <a href="tel:{{ d.author.phone | remove: ' ' }}">{{ d.author.phone }}</a>
     </li>
     <li>
       <i class="fas fa-map-marker-alt"></i>
-      <span>{{ site.author.location }}</span>
+      <span>{{ d.author.location }}</span>
     </li>
   </ul>
 </div>
 
 <div class="sb-section" id="skills">
-  <h2 class="sb-h"><i class="fas fa-chart-line"></i> 核心能力</h2>
-  {% for category in site.skills %}
+  <h2 class="sb-h"><i class="fas fa-chart-line"></i> {{ d.t.coreSkills }}</h2>
+  {% for category in d.skills %}
     <div class="sb-skill-cat">{{ category.category }}</div>
     {% for skill in category.items %}
       <div class="sb-skill">
@@ -42,8 +43,8 @@
 </div>
 
 <div class="sb-section" id="education">
-  <h2 class="sb-h"><i class="fas fa-graduation-cap"></i> 教育背景</h2>
-  {% for item in site.education %}
+  <h2 class="sb-h"><i class="fas fa-graduation-cap"></i> {{ d.t.education }}</h2>
+  {% for item in d.education %}
     <div class="sb-edu">
       <div class="sb-edu-body">
         <div class="sb-edu-school">{{ item.school }}</div>
@@ -55,18 +56,18 @@
 </div>
 
 <div class="sb-section">
-  <h2 class="sb-h"><i class="fas fa-language"></i> 语言能力</h2>
+  <h2 class="sb-h"><i class="fas fa-language"></i> {{ d.t.languages }}</h2>
   <ul class="sb-list">
-    {% for lang in site.languages %}
+    {% for lang in d.languages %}
       <li><span>{{ lang.name }}</span><span class="sb-muted">{{ lang.level }}</span></li>
     {% endfor %}
   </ul>
 </div>
 
 <div class="sb-section">
-  <h2 class="sb-h"><i class="fas fa-certificate"></i> 证书</h2>
+  <h2 class="sb-h"><i class="fas fa-certificate"></i> {{ d.t.certificates }}</h2>
   <ul class="sb-list">
-    {% for cert in site.certifications %}
+    {% for cert in d.certifications %}
       <li><span>{{ cert.name }}</span><span class="sb-muted">{{ cert.issuer }}</span></li>
     {% endfor %}
   </ul>
